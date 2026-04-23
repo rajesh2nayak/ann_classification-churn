@@ -9,7 +9,7 @@ import streamlit as st
 import tensorflow as tf
 
 #model = tf.keras.models.load_model('churn_model.h5')
-model = tf.keras.models.load_model('churn_model.h5', compile=False)
+model = tf.keras.models.load_model('model.keras')
 
 #label the encode the scaled data
 with open('label_encoder_gender.pkl', 'rb') as file:
