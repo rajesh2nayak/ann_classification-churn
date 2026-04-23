@@ -6,9 +6,9 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 import streamlit as st
 
-from Tensorflow.keras.models import load_model   # ✅ FIX
+import tensorflow as tf
 
-model = load_model('churn_model.h5')
+model = tf.keras.models.load_model('churn_model.h5')
 
 #label the encode the scaled data
 with open('label_encoder_gender.pkl', 'rb') as file:
